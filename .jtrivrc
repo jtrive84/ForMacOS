@@ -1,0 +1,8 @@
+repos=/home/jtriv/repos
+apps=/home/jtriv/apps
+a=/home/jtriv/apps/anaconda3
+b=${a}/bin
+gt=${repos}/GT
+data=/data
+ns=${gt}/CS7280
+
