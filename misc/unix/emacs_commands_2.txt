@@ -1,0 +1,19 @@
+Page Up: M v
+Page Down: C v
+
+# jump to line number:
+M-g M-g <lineno>
+
+# Center screen:
+C-l
+
+# Go to top of screen:
+M-0 M-r
+
+# Go to bottom of screen:
+M-- M-r
+
+
+# Get prompted for a file:
+C-x C-f
+

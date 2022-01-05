@@ -1,0 +1,34 @@
+blue.vim
+default.vim
+delek.vim
+desert.vim
+elflord.vim
+koehler.vim
+morning.vim
+murphy.vim
+pablo.vim
+peachpuff.vim
+shine.vim
+slate.vim
+torte.vim
+zellner.vim
+badwolf
+brogrammer
+distinguished
+dzo
+goodwolf
+gotham
+gotham256
+lyla
+seattle
+vice      +
+neodark 
+dracula
+smarties  +
+vorange   +
+
+
+
+
+
+

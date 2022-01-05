@@ -1,0 +1,173 @@
+vi COLORS
+----------------------------
+blue.vim
+darkblue.vim
+default.vim
+delek.vim
+desert.vim
+elflord.vim
+evening.vim
+koehler.vim
+morning.vim
+murphy.vim
+pablo.vim
+peachpuff.vim
+ron.vim
+shine.vim
+slate.vim
+torte.vim
+zellner.vim
+
+delete text from a line without deleting line: 0D
+start deleting from the first non-blank character: ^D
+
+
+
+MOTION COMMANDS
+----------------------------
+Move current line to center of screen: z .
+Move current line to top of screen   : z  <ENTER>
+Move current line to bottom of screen: z -
+Scroll back one line                 : ^ L
+Scroll forward one line              : ^ E
+
+Jump to line number: <n>gg
+	           : <n>G
+
+Exit recording mode: q
+Repeat last command: .
+
+
+LINE NUMBERS
+----------------------------
+:set number
+:set nonumber (turn line numbers off)
+
+
+SAVING FILES
+----------------------------
+[save and exit]     :wq ; :x
+[save and keep working]  :wa
+[exit without save]      :q!
+
+
+HIGHLIGHT TEXT
+----------------------------
+In normal mode (non-INSERT mode), navigate to
+where you want to begin highlighting.
+
+  --To select an entire line(s):
+    press V
+    move down with j to select multiple lines
+
+  --To select characters/words:
+    press v at the beginning of the text to copy
+    move with 'l' to highlight selection
+
+
+CUT/COPY/PASTE TEXT
+--------------------------
+Highlight text ('V' for whole line, 'v' for words), then:
+
+COPY                             : y
+CUT                              : d
+PASTE                            : p
+Delete from cursor to end of line: d$
+Delete entire line               : dd
+Delete word backward             : db
+
+Delete text without deleting line: D
+Copy current line: yy
+Copy from cursor to eol: y$
+Copy from cursor to end of current word: yw
+Copy 5 lines: 5yy
+
+Paste below cursor: p
+Paste above cursor: P
+
+Restore line: U
+
+
+SEARCH
+-------
+In normal mode, enter:
+/<search word>
+n - go to next match
+N - go to previous match
+ggn - to first match
+GN - to last match
+
+In normal mode, enter '*' before a word to search for it in document. 
+
+FIND/REPLACE
+--------------------------
+### SELECTION ###
+Highlight text, then enter ':'
+enter: s/<OLD_TEXT>/<NEW_TEXT>/g
+
+### WHOLE DOCUMENT ###
+:%s/<OLD_TEXT>/<NEW_TEXT>/g
+
+
+### CURRENT LINE ###
+:s/<OLD_TEXT>/<NEW_TEXT>/g
+
+
+
+EDIT TEXT
+----------------------------
+[delete character] dh-dl ; x
+[delete line]         dd ; D
+[delete blank lines] :g/^$/d
+
+[delete word]             dw
+[delete backward]         db
+
+
+
+NAVIGATION (LOCAL)
+--------------------------
+
+[beginning of line]  0 ; ^
+[end of line]            $
+
+[one character right]    l
+[one character left]     h
+[one word right]         w
+[one word left]          b
+[one line down]          j
+[one line up]            k
+
+[N characters right]  <N>l
+[N character left]    <N>h
+[N word right]        <N>w
+[N word left]         <N>b
+[N lines down]        <N>j
+[N lines up]          <N>k
+
+
+
+
+
+NAVIGATION (DOCUMENT WIDE)
+-----------
+[end of file]             G
+[top of file]       1G ; gg
+[goto line N]          <N>G
+[% of document]        <N>%
+
+
+
+
+MISC
+-----
+[undo command] :u
+[remove highlighting] :noh
+[delete text to end of line]: d$
+[delete text to beginning of line]: d^
+[delete a single word]:     cw<new_word>
+[replace a single character]: r<character>
+[yank highlighted to register]: "<letter>y   (example- "ay)
+[paste yanked contents]:      "<letter>p   (example- "ap)
+
+

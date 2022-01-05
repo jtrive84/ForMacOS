@@ -1,0 +1,58 @@
+NOTE: C-b is the current tmux prefix. This can be changed in
+      `.tmux.conf`. Check `.tmux.conf` or run C-b ? for
+      current key bindings.
+
+prefix: currently set to: C-c
+
+-----------------------------------------------------------------
+PANES
+-----------------------------------------------------------------
+Split screen horizontally: C-b % {rebound by C-b -}
+Split screen vertically  : C-b " {rebound by C-b |)
+Switch between panes     : C-b <arrow_keys> ; C-b o
+Show pane numbers, then hit the number to switch to pane: C-b q
+Kill current pane        : C-b x
+resize active pane       : C-b <hold down b> <arrow_keys>
+                           C-b :resize-p -D/U/L/R 2
+
+
+-----------------------------------------------------------------
+WINDOWS
+-----------------------------------------------------------------
+Open/Create new window          : C-b c
+Switch to previous window       : C-b p
+Switch to next window           : C-b n
+Exit current window             : C-d
+break current pane to new window: C-b !
+
+
+
+-----------------------------------------------------------------
+SESSION MANAGEMENT
+-----------------------------------------------------------------
+detach from session           : C-b d
+reattach to a detached session: tmux attach
+kill tmux session (from bash) : tmux kill-session -t <session_name_or_number>
+
+
+
+-----------------------------------------------------------------
+MISC
+-----------------------------------------------------------------
+Cycle through default pane layouts : C-b <space>
+See all key bindings               : C-b ?
+Toggle current Frame to full screen: C-b z
+Show time                          : C-b t
+Toggle zoom state of current pane  : C-b z
+break current pane to new window   : C-b !
+list all sessions                  : tmux ls
+
+
+
+
+
+
+
+
+
+

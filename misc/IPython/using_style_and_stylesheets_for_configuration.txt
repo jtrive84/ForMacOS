@@ -1,0 +1,6 @@
+
+$ jupyter qtconsole --stylesheet=<path> --style=tango
+
+
+stylesheet contains promt config info, whereas
+--style formats types.

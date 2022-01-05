@@ -1,0 +1,45 @@
+
+
+To switch between windows: C-b <window_number>
+To detach session: C-b d
+
+List all running tmux windows: tmux ls
+List all tmux windows        : C-b w
+Reattach to detached sessions: tmux attach -t 0  #t stands for target
+To kill tmux session: tmux kill-session -t <target> 
+Switch to previous window: C-b p
+Switch to next window:     C-b n
+Give tmux session a name instead of a number identifier:
+tmux new -s <session_name>
+
+
+PANE HANDLING
+-------------
+Split screen horizontally          : C-b %
+Split screen vertically            : C-b "
+Switch between panes               : C-b <arrow_keys>
+Toggle current Frame to full screen: C-b z
+Open/Create new window             : C-b c
+
+Show pane numbers, then hit the number to switch to pane: C-b q
+
+Move to current pane left : C-b {
+Move to current pane right: C-b }
+
+
+RESIZING PANES:
+---------------
+C-b :resize-p -D 2
+C-b :resize-p -U 2
+C-b :resize-p -L 2
+C-b :resize-p -R 2
+
+
+Cycle through default pane layouts: C-b <space>
+
+To make a pane it's own window: C-b break-pane
+
+
+
+
+

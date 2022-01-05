@@ -1,0 +1,12 @@
+FIND/REPLACE
+--------------------------
+### SELECTION ###
+Highlight text, then enter ':'
+enter: s/<OLD_TEXT>/<NEW_TEXT>/g
+
+### WHOLE DOCUMENT ###
+:%s/<OLD_TEXT>/<NEW_TEXT>/g
+
+
+### CURRENT LINE ###
+:s/<OLD_TEXT>/<NEW_TEXT>/g

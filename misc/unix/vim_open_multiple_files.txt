@@ -1,0 +1,8 @@
+$ vi <file1> <file2>
+vi opens to the first file
+
+
+To move to the next file:
+:n --> to next file
+:N --> to previous file
+:prev --> go to previous file

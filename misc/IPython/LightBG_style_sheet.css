@@ -1,0 +1,13 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro');
+QPlainTextEdit, QTextEdit { 
+	font: "Source Code Pro";
+	background-color: white;
+        color: black ;
+        selection-background-color: #ccc}
+.error { color: red; }
+.in-prompt { color: navy; }
+.in-prompt-number { font-weight: bold; }
+.out-prompt { color: darkred; }
+.out-prompt-number { font-weight: bold; }
+/* .inverted is used to highlight selected completion */
+.inverted { background-color: black ; color: white; }

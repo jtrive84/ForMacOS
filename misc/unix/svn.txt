@@ -1,0 +1,58 @@
+#### CHECKING OUT A REPOSITORY ################################
+svn checkout gets subversion to create a new working copy
+from a directory stored in the repository
+
+*first, obtain the name of the repo using svn info with
+the name of the directory of interest:
+$ svn info <repo_name>
+
+#next create an additional working copy doing the following:
+$ svn checkout file://<full_path_to_repo> <location_of_new_directory>
+
+
+
+
+
+#commit changes:
+$ svn commit -m "<message here>"
+
+
+#add a file to repository:
+$ svn add <filename>
+$ svn commit -m "added new file"
+
+
+#list files contained in svn repository:
+$ svn list
+
+
+#output a log of revisions:
+$ svn log
+
+
+#delete an item from the workign directory:
+$ svn delete <filepath>
+$ svn commit -m "deleted <filename>"
+
+
+#display the difference between your working copy
+#and the copy in the repository:
+$ svn diff <filename>
+
+
+#find the difference between to revisions:
+$ svn -r R1:R2 diff <filename>
+
+
+#update working copy to the repository's copy:
+$ svn update <filename>
+
+
+#to check out a version other than the latest:
+$ svn checkout -r 7 <repository_full_path> <directory_to_store_files>
+
+#to find out where a working copy comes from:
+$ svn info <working_directory_name>
+
+
+

@@ -1,0 +1,5 @@
+$ watch -n 5 free -m
+
+
+#using ps:
+$ watch -n 2 ps -f --forest -u cac9159

@@ -1,0 +1,107 @@
+@import url('http://fonts.googleapis.com/css?family=Helvetica');
+@import url('http://fonts.googleapis.com/css?family=DejaVu+Sans+Mono');
+@import url('http://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('http://fonts.googleapis.com/css?family=Hack');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('http://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('http://fonts.googleapis.com/css?family=Liberation+Mono');
+
+
+
+/***** Jupyter Notebook IPython Cell formatting ******************************/
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-width: 0;
+    background: transparent;
+    font-family: "Envy Code R" !important;
+    margin: 0;
+	font-size: 10pt !important;
+    white-space: pre;
+    word-wrap: normal;
+    line-height: inherit;
+    color: inherit;
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-variant-ligatures: contextual;
+    font-variant-ligatures: contextual;
+}
+
+/***** Controls appearance of unrendered text typed into notebook cells. *****
+div.container pre{
+    font-family: "Sometype Mono", "CamingoCode", monospace;
+    font-size: 10pt;
+	line-height: 120%;
+	background-color:#F7F8FE;
+}
+*/
+
+/* Change inner background (for code) 
+div.input_area {
+	background: white !important;
+}
+*/
+
+
+.cm-s-ipython div.CodeMirror-selected {
+	background: #DEBEDE !important;
+}
+
+
+/***** Formats markdown text in code blocks (i.e. ```python ... ```)  ********/
+div.text_cell_render pre {
+	font-family: "Envy Code R";
+	font-size: 10pt;
+	line-height: 130%;
+	
+}
+
+
+/***** Jupyter output cell format ********************************************/
+div.output pre{
+    font-family: "Envy Code R";
+    font-size: 10pt;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+div.output_html td{
+    font-family: "Envy Code R";
+    font-size: 10pt;
+}
+
+
+/***** Formats inline code (surrounded by ` `) *******************************/
+.rendered_html code {
+	font-family: "Roboto Mono";
+	color: #E54444;
+	background-color:#FFFFFF;
+	font-size: 10pt;
+	line-height: 130%;
+}
+
+
+
+
+/***** non-code Rendered Markdown ********************************************/
+div.text_cell_render {
+    font-family: "Arial" !important;
+    font-size: 11pt !important;
+    line-height: 125%;
+}
+
+
+
+/***** Style of Listed Directory contents ************************************/
+body {
+    font-family: "Arial", "Helvetica", "sans-serif";
+    font-size: 11pt;
+    line-height: 125%;
+}
+

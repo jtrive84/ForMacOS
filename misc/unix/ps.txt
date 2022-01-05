@@ -1,0 +1,20 @@
+bsd output: 
+$ ps aux
+
+linux wide format: 
+$ ps -f -u cac9159
+
+List top 5 resource intensive processes:
+$ ps aux --sort=-pcpu,+pmem
+
+Show processes in tree form:
+$ ps -eo ppid,pid,uname,args --forest
+
+-or-
+
+$ ps -axjf
+
+
+******GET USER PROCESSES AS A TREE******
+
+$ ps -f --forest -u cac9159

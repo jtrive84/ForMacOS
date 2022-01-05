@@ -1,0 +1,3 @@
+/<string>
+
+to find string, '*' finds next occurance.

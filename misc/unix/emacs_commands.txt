@@ -1,0 +1,277 @@
+--------------------------------------------------------------------------------
+MOST USED                                                                      |
+--------------------------------------------------------------------------------
+Exit emacs  : C-x C-c
+Goto line   : M-g M-g <lineno>
+Open file   : C-x C-f <FILENAME>
+ 
+Save work without exiting: C-x C-s
+Cycle through buffers    : C-x <LEFT> | C-x <RIGHT>
+Read file into emacs     : C-x C-f
+List directory contents  : C-x C-d <DIR_PATH>
+Split Window Horizontally: C-x 2
+Split Window Vertically  : C-x 3
+Unsplit Window           : C-x 1
+
+
+Undo                     : C-x u
+
+
+
+
+
+HELP: ESC help-with-tutorial
+
+Recenter screen at cursor: C-l
+Center Screen at top     : C-0 C-l
+
+Quit command: C-g
+
+
+--------------------------------------------------------------------------------
+QUICK GUIDE                                                                    |
+--------------------------------------------------------------------------------
+
+
+Activate MenuBar         : F10
+Exit MenuBar             : C-g ; ESC ESC ESC
+Switch between visible buffers: C-x o
+
+Describe key: C-h k
+
+Set Mark  : C-SPC
+Cut Text  : C-w
+Copy Text : M-w
+Paste Text: C-y
+Undo      : C-x u
+
+Delete text on same line in front of cursor: C-k
+Delete next character: C-d
+Delete Blank lines around current line: C-x C-o
+
+Open file in a new frame: C-x 5 f
+Opne file in same frame but different window: C-x 4 f
+
+
+
+Go to top of screen    : M-0 M-r
+Go to bottom of screen : M-- M-r
+
+Get pompted for a file : C-x C-f
+
+
+Show Line Numbers       : M-x linum-mode
+Get current line number : M-x what-line
+
+--------------------------------------------------------------------------------
+MOVEMENT                                                                       |
+--------------------------------------------------------------------------------
+move backward 1 character (no delete): C-b
+move forward  1 character (no delete): C-f
+
+move backward 1 word (no delete): ESC-b
+move forward  1 word (no delete): ESC-f
+
+move up   1 line  : C-p
+move down 1-line  : C-n
+move down 5-lines : M-5 C-n
+move down 15-lines: M-1 5 C-n (hold meta while typing both digits)
+
+move to beginning of line        : C-a
+move to end       of line        : C-e
+move to beginning of sentence    : ESC-a
+move to end       of sentence    : ESC-e
+move to beginning of file        : M-<
+move to end       of file        : M->
+move t ofist whitespace character: M-m
+
+Goto line: ESC-x <lineno>
+         : M-g M-g <lineno>
+     
+     
+--------------------------------------------------------------------------------
+WINDOWS                                                                        |
+--------------------------------------------------------------------------------
+C-x 0                 : close the active window
+C-x 1                 : close all windows except the active window
+C-x 2                 : split the active window vertically into two horizontal windows
+C-x 3                 : split the active window horizontally into two vertical windows
+C-x o                 : change active window to next window
+Next Buffer           : C-x <left/righ arrow>
+Exit Split-Screen mode: C-x 0
+
+
+
+--------------------------------------------------------------------------------
+MOTION BETWEEN BUFFERS                                                         |
+--------------------------------------------------------------------------------
+Next Screen    : CTRL-v
+Previous Screen: ESC-v
+
+
+
+--------------------------------------------------------------------------------
+MOTION                                                                         |
+--------------------------------------------------------------------------------
+C-b
+	go backwards one character without deleting (usually you 
+	can also use the cursor key for this)
+	
+C-f
+	go forward one character without deleting (usually you can 
+	also use the cursor key for this)
+	
+ESC b
+	go backwards one word
+	
+ESC f
+	go forward one word
+	
+C-p
+	go up one line (usually you can also use the cursor key for this)
+	
+C-n
+	go down one line (usually you can also use the cursor key for this)
+	
+C-a
+	go to beginning of the line
+
+C-e
+	go to end of the line
+
+ESC a
+	go to beginning of the sentence
+
+ESC e
+	go to end of the sentence
+
+ESC <
+	go to the beginning of the file
+
+ESC >
+	go to the end of the file
+
+ESC x goto-line
+	go to the line specified
+
+
+
+--------------------------------------------------------------------------------
+FILES                                                                          |
+--------------------------------------------------------------------------------
+C-x s
+	save the file
+C-x C-w
+	save a file with a new name
+C-x C-v
+	read a different file into emacs, replacing the current buffer
+C-x C-f
+	read a different file into emacs and put it into another buffer
+C-x i
+	insert contents of another file into this buffer
+
+
+--------------------------------------------------------------------------------
+CUTTING AND PASTING                                                            |
+--------------------------------------------------------------------------------
+Kill - `cutting`
+Yank - `pasting`
+
+In emacs, to "kill" means to delete something in a way that lets you recover it 
+if you change your mind. DEL refers to the key on your keyboard that deletes 
+backward one character--this may be the Backspace, Delete, or Rubout key 
+depending on your particular keyboard.
+
+DEL
+	delete previous character
+
+C-d
+	delete next character
+
+ESC DEL
+	kill previous word
+
+ESC d
+	kill next word
+
+ESC 0 C-k
+	kill line to beginning
+
+C-k
+	kill line to end
+
+C-x DEL
+	kill sentence to beginning
+
+ESC k
+	kill sentence to end
+
+To move or copy a region of text in emacs, you must first "mark" it, 
+then kill or copy the marked text, move the cursor to the desired 
+location, and restore the killed or copied text. A region of text 
+is defined by marking one end of it, then moving the cursor to the 
+other end:
+
+CTRL-@; CTRL-SPACE
+	set mark here
+
+CTRL-x CTRL-x
+	exchange cursor and mark (used to verify you have marked the desired region)
+
+ESC h
+	mark current paragraph
+
+CTRL-x h
+	mark entire buffer
+	
+CTRL-w
+	kill the marked region
+	
+ESC w
+	copy the marked region
+	
+All killed text (except single characters deleted with DEL 
+or CTRL-d) can be restored to the buffer. The most recently 
+killed text is the first to be restored, then previously 
+killed text blocks are restored in reverse order.
+
+CTRL-y
+	re-insert ('yank') the last text that was killed
+	
+ESC y
+	replace that restored text with previously killed text. 
+	Repeated use will cycle through killed text blocks in reverse order.
+	
+--------------------------------------------------------------------------------
+SEARCH AND REPLACE                                                             |
+--------------------------------------------------------------------------------
+In both forward and backward incremental searching, you can repeat the same 
+command for next occurrences. The right cursor key exits the current search 
+without moving the cursor. CTRL-g aborts the current search and moves the 
+cursor back to the initial position.
+
+CTRL-s
+	incremental search forward. 
+	
+	Note: On some terminals and serial connections, CTRL-s causes 
+	the display to freeze. If this happens, use CTRL-q to fix the 
+	problem, and use ESC x search-forward (CTRL-x Esc for further 
+	occurrences).
+	
+CTRL-r
+	incremental search backward
+	
+ESC %
+	(query-replace) - ask before replacing each OLD STRING with NEW 
+	STRING. Type y to replace this one and go to the next one, and 
+	type n to skip to next without replacing.
+	
+ESC x replace-string
+	replace all occurrences of OLD STRING with NEW STRING. 
+	If you need to replace a Return character (^J), type CTRL-j instead 
+	(because typing Return is interpreted directly in the minibuffer).
+	
+ESC-x list-matching-lines
+	lists all the lines matching your pattern in a separate buffer, 
+	along with their numbers. Use ESC-x goto-line to go to the 
+	occurrence you're interested in.

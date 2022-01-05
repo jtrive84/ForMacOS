@@ -1,0 +1,47 @@
+top sub-commands
+
+When top is running, you can give commands to it interactively from the Message/Prompt Line. 
+These commands are global commands, summary area commands, task area commands and the commands for windows.
+
+Global Commands
+
+The global commands are always available in both the full screen and alternate display modes.
+
+top - Important global commands
+Option	Description
+Enter, Space	Refresh display
+h	Display help screen. A second h input displays the alternate display mode help.
+=	Remove restrictions on display in task area. Useful for resetting the effect of i, n and p commands.
+A	Toggle to alternate display mode and vice-versa
+B	The global bold enable/disable toggle. The main entries in the summary area and the current window are 
+	made bold. Or, if bold is on, these return to normal display.
+d, s	Change the delay time interval (seconds). Not available in secure mode.
+G	Go to another window/field group
+I	Toggle between Irix mode (I On) and Solaris mode (I Off). In the Solaris mode, the CPU usage 
+	(%CPU) is divided by the total number of CPUs in the system
+u	Select an effective user id or user name. Only the processes belonging to this user will be displayed.
+U	Select a real/effective/saved/file system user id or user name. Only the processes belonging to this user will be displayed.
+k	Kill a task (process/thread). Not available in secure mode.
+q	Quit
+r	Re-nice a task. Not available in secure mode.
+W	Write the user's configuration file as $HOME/.toprc. All the toggles and options are saved. Useful for 
+	starting top with the same settings as the last invocation
+Z	Change text color in the four areas
+
+
+h - option description
+
+l,t,m - toggle summaries
+1,I   - Toggle SMP View
+H     - Toggle Threads
+c     - Toggle Command Line
+i     - Toggle idle tasks
+
+b - toggle bold
+
+
+'D' = uninterruptible sleep
+'R' = running
+'S' = sleeping
+'T' = traced or stopped
+'Z' = zombie

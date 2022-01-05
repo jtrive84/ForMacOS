@@ -1,0 +1,25 @@
+Monospaced
+----------
+Consolas
+Monaco
+Courier New
+Lucida Console
+Lucida Sans Typewriter
+Tahoma
+Big Caslon
+Source Code Pro
+Times
+
+Valid with QtConsole
+---------------------
+Times
+Consolas
+Courier New
+Lucida Console
+Helvetica
+Georgia
+Modern
+Garamond
+Terminal
+Fixedsys
+

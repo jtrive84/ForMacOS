@@ -1,0 +1,5 @@
+To select a region, first you set a mark at one end of 
+the text you want to select, then you move the cursor 
+to the other end. The region is all of the text from 
+the mark to the cursor. To set the mark, you may either 
+press C-SPC or C-@, or enter M-x set-mark-command.
