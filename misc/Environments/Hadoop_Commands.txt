@@ -1,0 +1,46 @@
+# Switch to hdfs user.
+sudo su - hdfs
+
+# List directories in dfs.
+hdfs dfs -ls /user
+hadoop fs -ls /user/root
+
+# Remove directory.
+hdfs dfs -rm -r <directory>
+hadoop fs -rm -r <directory>
+
+
+
+# Copy file from local filesystem to input directory.
+hdfs dfs -put case.csv /user/root/input
+hadoop fs -put case.csv /user/root/input
+
+
+# Copy data out of hdfs to local filesystem (need to be able to write at destination)
+hdfs dfs -get /user/root/input/case.csv local_case.csv
+hadoop fs -get /user/root/input/case.csv local_case.csv
+
+
+# Print contents of file in Hadoop directory.
+hdfs dfs -cat /user/root/input/case.csv
+hadoop fs -cat /user/root/input/case.csv
+
+
+# Using wildcard characters.
+hdfs dfs -cat input/*.csv
+
+
+# Hive -------------------------------------------------------------------------
+
+# Export Hive query results to .csv file (method #1).
+hive -e --hiveconf hive.cli.print.header=True 'select books from table' > /home/lvermeer/temp.tsv
+
+# Using query syntax (method #2).
+# OVERWRITE and LOCAL have the same interpretations as before and paths are 
+# interpreted following the usual rules. One or more files will be written 
+# to /tmp/ca_employees, depending on the number of reducers invoked.
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/lvermeer/temp' 
+ROW FORMAT DELIMITED 
+FIELDS TERMINATED BY ',' 
+select books from table;

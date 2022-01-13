@@ -1,0 +1,5 @@
+val df3 = df2.withColumn("lit_value2",
+    when(col("Salary") >=40000 && col("Salary") <= 50000,
+       lit("100").cast(IntegerType))
+      .otherwise(lit("200").cast(IntegerType))
+  )
