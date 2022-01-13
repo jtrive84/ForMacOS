@@ -1,0 +1,20 @@
+Host dos
+	Hostname 159.203.36.25
+	User jtriv
+	Port 22
+	IdentityFile C:/Users/jtriv/.ssh/id_rsa
+	Protocol 2
+
+Host gcp
+	Hostname 34.69.161.54
+	User jtriv
+	Port 22
+	IdentityFile C:/Users/jtriv/.ssh/id_rsa_gcp
+	Protocol 2
+	
+Host locsrv 
+	Hostname 192.168.1.14
+	User jtriv
+	Port 22
+	IdentityFile C:/Users/jtriv/.ssh/id_rsa_locsrv
+	Protocol 2
